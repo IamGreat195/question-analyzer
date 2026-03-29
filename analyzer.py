@@ -199,7 +199,6 @@ def process_question_image(image_path, output_dir="corrected_questions"):
     with open(analysis_path, 'w') as f:
         json.dump(analysis, f, indent=2)
     
-    # Check if diagram/graph needs regeneration - also infer from issue_type
     issue_type = analysis.get('issue_type', '')
     needs_visual = (
         analysis.get('requires_graph_generation') or 
@@ -210,7 +209,6 @@ def process_question_image(image_path, output_dir="corrected_questions"):
     )
     
     if needs_visual:
-        # Force the flags to be consistent
         if 'diagram' in issue_type:
             analysis['requires_diagram_generation'] = True
         if 'graph' in issue_type:
@@ -275,7 +273,6 @@ def batch_process_questions(image_paths, output_dir="corrected_questions"):
         if result:
             results.append(result)
     
-    # Create summary
     summary_path = os.path.join(output_dir, "summary.json")
     with open(summary_path, 'w') as f:
         json.dump(results, f, indent=2)
@@ -290,21 +287,18 @@ def batch_process_questions(image_paths, output_dir="corrected_questions"):
     
     return results
 
-# Example usage
 if __name__ == "__main__":
     import glob
     
     test_dir = "test_images"
     output_dir = "corrected_questions"
     
-    # Auto-discover all images in test_images/
     image_extensions = ("*.png", "*.jpg", "*.jpeg", "*.bmp", "*.webp")
     all_images = []
     for ext in image_extensions:
         all_images.extend(glob.glob(os.path.join(test_dir, ext)))
     all_images.sort()
     
-    # Filter out images that already have corrections
     question_images = []
     for img_path in all_images:
         basename = os.path.splitext(os.path.basename(img_path))[0]
