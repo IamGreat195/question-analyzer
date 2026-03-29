@@ -1,0 +1,26 @@
+{
+  "question_text": "\u2022 In quadrant 3, the curve rises to its maximum at point (0 comma negative 3).\n\u2022 In quadrant 4, the curve then falls.\nThe graph of the polynomial function f, where y = f(x), is shown. The y-intercept of the graph is (0, y). What is the value of y?",
+  "answer_provided": "-3",
+  "issue_type": "missing_graph",
+  "current_state": "The question describes a polynomial function and states that its graph is 'shown', but no graph is actually present in the image. The text provides information about the curve's behavior and specifies a maximum point at (0, -3). It then asks for the y-value of the y-intercept, which is given as (0, y).",
+  "what_should_be_shown": "A graph of a polynomial function f(x) should be displayed. This graph must meet the following conditions:\n1.  It should have a maximum point at (0, -3).\n2.  In quadrant 3 (x < 0, y < 0), the curve should be rising towards the point (0, -3). This means for x values approaching 0 from the left, the y values should be increasing towards -3.\n3.  In quadrant 4 (x > 0, y < 0), the curve should be falling from the point (0, -3). This means for x values increasing from 0, the y values should be decreasing from -3.\nA simple example of such a graph would be y = -x^2 - 3, which is a parabola opening downwards with its vertex (maximum) at (0, -3). The y-intercept of this graph would clearly be (0, -3), making the value of y = -3, consistent with the provided answer.",
+  "requires_graph_generation": true,
+  "requires_diagram_generation": false,
+  "requires_answer_correction": false,
+  "graph_specifications": {
+    "type": "polynomial_curve",
+    "details": "A polynomial function f(x) with a local (and potentially global) maximum at (0, -3). The curve should rise when x < 0 and fall when x > 0, centered around the maximum at x=0. The y-intercept should be (0, -3). An example function is y = -x^2 - 3.",
+    "key_points": [
+      "maximum at (0, -3)",
+      "y-intercept at (0, -3)",
+      "curve rises in Quadrant 3 towards (0, -3)",
+      "curve falls in Quadrant 4 from (0, -3)"
+    ],
+    "labels": {
+      "x": "x",
+      "y": "f(x)"
+    },
+    "data_points": null
+  },
+  "correct_answers": "-3"
+}

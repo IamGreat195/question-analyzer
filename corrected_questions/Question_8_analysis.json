@@ -1,0 +1,18 @@
+{
+  "question_text": "Saddie is trying to determine the cost of repairing his car's engine. The cost of repairs can be represented by the rational function C(x) = (2x+7) / ((x+3)(x+1)), where C(x) is the cost of repairs in dollars and x represents the number of hours of labor. Saddie knows that the cost of repairs consists of the cost of work on determining the cause of the breakdown, D(x) = A / (x+3), and the cost of work on eliminating the cause of the breakdown, E(x) = B / (x+1).\nWhich equation can be used to find A and B?",
+  "answer_provided": "A) 5x + 7 = A(x + 1) + B(x + 3)\nB) 2x + 7 = A(x + 1) + B(x + 3)\nC) 2x - 7 = A(x + 1) - B(x + 3)\nD) 2x + 9 = A(x + 3) + B(x + 5)",
+  "issue_type": "no_issues",
+  "current_state": "The question is about partial fraction decomposition. The rational function C(x) is given as C(x) = D(x) + E(x). This translates to (2x+7) / ((x+3)(x+1)) = A / (x+3) + B / (x+1). To find A and B, one must combine the fractions on the right side by finding a common denominator, which is (x+3)(x+1). This results in A(x+1) + B(x+3) / ((x+3)(x+1)). Equating the numerators of both sides yields 2x+7 = A(x+1) + B(x+3). This matches option B. Option B is also highlighted as the chosen answer. The explanation provided beneath the hint section correctly shows this derivation.",
+  "what_should_be_shown": "The question, options, and explanation are all correct. No changes are needed.",
+  "requires_graph_generation": false,
+  "requires_diagram_generation": false,
+  "requires_answer_correction": false,
+  "graph_specifications": {
+    "type": null,
+    "details": null,
+    "key_points": [],
+    "labels": {},
+    "data_points": null
+  },
+  "correct_answers": "B"
+}

@@ -1,0 +1,44 @@
+{
+  "question_text": "Refer to the following information, answer the questions below.\nOn the coordinate plane, Adam drew a plan of his room.\nWhat are the coordinates of the window?",
+  "answer_provided": "A) (4, 6)\nB) (5, 5)\nC) (6, 4)\nD) (7, 4)",
+  "issue_type": "no_issues",
+  "current_state": "The question provides a coordinate plane diagram showing a plan of a room with various items. The legend identifies each item. The question asks for the coordinates of the 'Window'. The diagram clearly shows the window centered at coordinates (4, 6). Option A is (4, 6), which is the correct coordinate for the window. The provided explanation also confirms (4, 6).",
+  "what_should_be_shown": "The current diagram and answer choices are correct. The window is clearly located at (4, 6) on the coordinate plane, and option A matches this location.",
+  "requires_graph_generation": false,
+  "requires_diagram_generation": false,
+  "requires_answer_correction": false,
+  "graph_specifications": {
+    "type": "geometry_diagram",
+    "details": "A 2D coordinate plane with x and y axes ranging from 0 to 8. Various household items are placed at specific coordinates:",
+    "key_points": [
+      {
+        "item": "Bed",
+        "coordinates": "(1, 1)"
+      },
+      {
+        "item": "Bookcase",
+        "coordinates": "(2, 4)"
+      },
+      {
+        "item": "Window",
+        "coordinates": "(4, 6)"
+      },
+      {
+        "item": "TV",
+        "coordinates": "(7, 2)"
+      },
+      {
+        "item": "Night table",
+        "coordinates": "(6, 1)"
+      }
+    ],
+    "labels": {
+      "x": "x",
+      "y": "y"
+    },
+    "data_points": "Items with their central coordinates as described in 'key_points'."
+  },
+  "correct_answers": [
+    "(4, 6)"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "question_text": "Which of the following shapes has two lines of symmetry?",
+  "answer_provided": "A: A kite-like quadrilateral, B: A regular hexagon, C: A pentagon with one line of symmetry, D: An isosceles trapezoid.",
+  "issue_type": "incorrect_diagram+incorrect_answers",
+  "current_state": "The question asks to identify a shape with exactly two lines of symmetry. \nShape A is drawn as a kite, which has one line of symmetry (along its main diagonal).\nShape B is drawn as a regular hexagon, which has six lines of symmetry (three through opposite vertices and three through the midpoints of opposite sides).\nShape C is drawn as a pentagon with a single vertical line of symmetry.\nShape D is drawn as an isosceles trapezoid, which has one line of symmetry (the line connecting the midpoints of its parallel sides).\nNone of the provided shapes (A, B, C, D) have exactly two lines of symmetry. Therefore, no correct answer is available among the given choices.",
+  "what_should_be_shown": "To correctly answer the question, one of the shapes should be a geometric figure that possesses exactly two lines of symmetry. Examples of such shapes include a rectangle (that is not a square) or a rhombus (that is not a square).\nFor instance, if option A were replaced with a non-square rectangle, it would have two lines of symmetry (one horizontal and one vertical, passing through the midpoints of opposite sides). The other options could remain as currently depicted, as they would still not fit the criteria of having exactly two lines of symmetry.",
+  "requires_graph_generation": false,
+  "requires_diagram_generation": true,
+  "requires_answer_correction": true,
+  "graph_specifications": {
+    "type": "geometry_diagram",
+    "details": "A set of four shapes, labeled A, B, C, D. One of the shapes must exhibit exactly two lines of symmetry. For example, replace shape A with a non-square rectangle. The other shapes (B, C, D) can remain as a regular hexagon, a symmetrical pentagon, and an isosceles trapezoid respectively, as they do not have exactly two lines of symmetry.",
+    "key_points": [
+      "Shape A: A rectangle that is not a square (e.g., width 4 units, height 2 units). It should have clear horizontal and vertical lines of symmetry.",
+      "Shape B: A regular hexagon (6 lines of symmetry).",
+      "Shape C: A pentagon with only one vertical line of symmetry.",
+      "Shape D: An isosceles trapezoid with only one vertical line of symmetry."
+    ],
+    "labels": {},
+    "data_points": null
+  },
+  "correct_answers": "A"
+}

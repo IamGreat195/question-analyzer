@@ -1,0 +1,22 @@
+{
+  "question_text": "In the figure below, a square is inscribed in a circle. If the perimeter of the square is 32, what is the area of the shaded region between the circle and the square?",
+  "answer_provided": "A) 64\u03c0 \u2013 64\nB) 128\u03c0 \u2013 64\nC) 256\u03c0 \u2013 64\nD) 64\u03c0 \u2013 32",
+  "issue_type": "incorrect_diagram+incorrect_answers",
+  "current_state": "The diagram shows a circle with a square inside it. However, the square is NOT correctly inscribed in the circle; its vertices do not touch the circumference of the circle. Instead, the top and bottom sides appear to be tangent to horizontal lines that would pass through the top and bottom points of the circle, and similarly for the left and right, but the corners themselves are clearly inside the circle, not on its edge. There is also extraneous text 'Px=32' on the diagram which is irrelevant to the problem. The shading is also inconsistent with 'between the circle and the square' as it partially shades the square itself. The provided answer choices do not contain the correct mathematical answer.",
+  "what_should_be_shown": "A geometrically accurate diagram showing a square inscribed within a circle, meaning all four vertices of the square must lie on the circumference of the circle. The region *between* the circle and the square should be shaded (i.e., the area within the circle but outside the square). There should be no extraneous text like 'Px=32'.\n\n**Calculations for the correct answer:**\n1.  Perimeter of the square = 32.\n2.  Side length (s) of the square = Perimeter / 4 = 32 / 4 = 8.\n3.  Area of the square = s\u00b2 = 8\u00b2 = 64.\n4.  When a square is inscribed in a circle, the diagonal of the square is equal to the diameter of the circle.\n5.  Diagonal (d) of the square = s\u221a2 = 8\u221a2.\n6.  Diameter (D) of the circle = 8\u221a2.\n7.  Radius (r) of the circle = D / 2 = (8\u221a2) / 2 = 4\u221a2.\n8.  Area of the circle = \u03c0r\u00b2 = \u03c0(4\u221a2)\u00b2 = \u03c0(16 * 2) = 32\u03c0.\n9.  Area of the shaded region (between the circle and the square) = Area of circle - Area of square = 32\u03c0 - 64.",
+  "requires_graph_generation": false,
+  "requires_diagram_generation": true,
+  "requires_answer_correction": true,
+  "graph_specifications": {
+    "type": "geometry_diagram",
+    "details": "A circle with a square perfectly inscribed within it. All four vertices of the square must touch the circumference of the circle. The region within the circle but outside the square should be shaded. No text should be overlaid on the diagram.",
+    "key_points": [
+      "A circle centered at the origin.",
+      "A square inscribed in the circle, with its vertices on the circumference.",
+      "The area inside the circle but outside the square should be shaded."
+    ],
+    "labels": {},
+    "data_points": "Square side length derived from perimeter 32 is 8. Radius of circle will be 4\u221a2. Square vertices can be at (4,4), (-4,4), (-4,-4), (4,-4) if rotated 45 degrees, or (4\u221a2,0) rotated at specific angles for general inscription."
+  },
+  "correct_answers": "32\u03c0 - 64"
+}

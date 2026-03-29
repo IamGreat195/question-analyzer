@@ -1,0 +1,29 @@
+{
+  "question_text": "The following graph shows the relationship between which two reciprocal trigonometric functions?\nEach tick mark along the x-axis represents $\\frac{\\pi}{2}$ radians.",
+  "answer_provided": "A) Cosine and Cosecant\nB) Tangent and Cotangent\nC) Sine and Secant\nD) Sine and Cosecant",
+  "issue_type": "missing_graph",
+  "current_state": "The question explicitly states, \"The following graph shows...\" but no graph is present in the image. The answer choices list pairs of trigonometric functions. Options B (Tangent and Cotangent) and D (Sine and Cosecant) represent actual reciprocal trigonometric functions. Options A (Cosine and Cosecant) and C (Sine and Secant) do not represent reciprocal pairs (Cosine's reciprocal is Secant, Sine's reciprocal is Cosecant).",
+  "what_should_be_shown": "A graph plotting two reciprocal trigonometric functions, specifically y = sin(x) and y = csc(x) (which is 1/sin(x)). The x-axis should be clearly labeled, with tick marks at multiples of \u03c0/2. The y-axis should span a range that adequately displays both functions, including values outside of [-1, 1] for cosecant. The sine curve should oscillate smoothly between -1 and 1. The cosecant curve should have vertical asymptotes at x = n\u03c0 (where sin(x)=0) and be 'U'-shaped, touching the sine curve at its local maxima and minima (y=1 and y=-1). This graph would correspond to option D.",
+  "requires_graph_generation": true,
+  "requires_diagram_generation": false,
+  "requires_answer_correction": false,
+  "graph_specifications": {
+    "type": "trigonometric_functions",
+    "details": "Plot the functions y = sin(x) and y = csc(x) (which is 1/sin(x)).\nx-axis range: from -2\u03c0 to 2\u03c0.\nx-axis labels: Tick marks at -2\u03c0, -3\u03c0/2, -\u03c0, -\u03c0/2, 0, \u03c0/2, \u03c0, 3\u03c0/2, 2\u03c0.\ny-axis range: from -4 to 4.\ny-axis labels: Major ticks at -3, -2, -1, 0, 1, 2, 3.\nFunction 1: y = sin(x) (e.g., in blue).\nFunction 2: y = csc(x) (e.g., in red), including dashed vertical asymptotes at x = n\u03c0.",
+    "key_points": [
+      "Graph of y=sin(x) (oscillating between -1 and 1)",
+      "Graph of y=csc(x) (with vertical asymptotes at x=n\u03c0)",
+      "Asymptotes for y=csc(x) at x=n\u03c0",
+      "x-axis labeled as 'x (radians)' with tick marks at multiples of \u03c0/2",
+      "y-axis labeled as 'y'"
+    ],
+    "labels": {
+      "x": "x (radians)",
+      "y": "y"
+    },
+    "data_points": null
+  },
+  "correct_answers": [
+    "D"
+  ]
+}

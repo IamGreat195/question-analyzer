@@ -1,0 +1,8 @@
+[
+  {
+    "original": "test_images/Question_10.png",
+    "analysis": "corrected_questions/Question_10_analysis.json",
+    "corrected": "corrected_questions/Question_10_corrected.png",
+    "issue_type": "no_issues"
+  }
+]
