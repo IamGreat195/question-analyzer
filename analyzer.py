@@ -7,7 +7,7 @@ from PIL import Image
 import os
 import time
 
-genai.configure(api_key="AIzaSyAE17QWexTpHQcYfuMPPvlKjvp2LacqumY")
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 def analyze_question_image(image_path):
     img = Image.open(image_path)
